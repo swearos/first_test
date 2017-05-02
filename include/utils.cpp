@@ -31,8 +31,7 @@ str_map parse_json_config(const std::string file_path) {
     boost::property_tree::ptree pt;
     boost::property_tree::read_json(ifs, pt);
 
-    boost::property_tree::basic_ptree<std::string, std::string>::const_iterator
-            iter = pt.begin();
+    boost::property_tree::basic_ptree<std::string, std::string>::const_iterator iter = pt.begin();
 
     for (; iter != pt.end(); ++iter) {
         json_map[iter->first.data()] = iter->second.data();

@@ -65,6 +65,7 @@ int main(int argc, char **argv) {
     std::string image_dir = FLAGS_image_dir.c_str();
     std::string out_dir = FLAGS_out_dir.c_str();
     std::vector<std::string> images = get_file_list(image_dir, ".jpg");
+
     Detector detector(proto_file, model_file, default_config_file);
 
     std::vector<BBox<float> > results;

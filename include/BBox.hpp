@@ -23,6 +23,7 @@ public:
         for (int i=0;i<4;i++) Point[i] = data[i];
     }
     Point4f(const Point4f &other) { memcpy(Point, other.Point, sizeof(Point)); }
+
     Dtype& operator[](const unsigned int id) { return Point[id]; }
     const Dtype& operator[](const unsigned int id) const { return Point[id]; }
 
@@ -70,6 +71,7 @@ public:
         snprintf(buff, sizeof(buff), "cls:%1d -- (%.2f)", id, confidence);
         return string(buff);
     }
+
     inline Dtype Confidence() const{
         return confidence;
     }
