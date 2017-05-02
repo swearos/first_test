@@ -1,3 +1,0 @@
-/home/swearos/Documents/deep_learning/1_My_code/object_detect/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/swearos/Documents/deep_learning/1_My_code/object_detect/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/swearos/Documents/deep_learning/1_My_code/object_detect/cmake-build-debug/CMakeFiles/object_detect.dir
